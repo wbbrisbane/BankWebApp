@@ -1,0 +1,42 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Display.js"></script>
+</head>
+<body>
+    <h1>USD/CAD, CORRA correlation</h1>
+    <form name="dates" method="get" action="api/Form/">
+        <label for="from">Start date</label>
+        <input type="date" name="from">
+        <label for="to">End date</label>
+        <input type="date" name="to">
+        <br><br>
+        <button type="submit">Calculate</button>
+        <br><br>
+    </form>
+    <table border="1" id="output">
+        <tr>
+            <th></th>
+            <th>max</th>
+            <th>min</th>
+            <th>avg</th>
+        </tr>
+        <tr>
+            <td>CAD/USD</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CORRA</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Pearson coefficient</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>
